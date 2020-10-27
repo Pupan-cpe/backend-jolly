@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+    server_backend :
+        image: jollygero/controlpane-back:latest
+        ports:
+            - "4005:4000"
+        networks:
+           - dev-network
+
+networks:
+    dev-network:
+        driver: bridge
